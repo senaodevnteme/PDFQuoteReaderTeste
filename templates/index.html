@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Upload</title>
+</head>
+<body>
+    <h1>Leitor PDF v1</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="manufacturer">Manufacturer:</label>
+        <select id="manufacturer" name="manufacturer" required list="manufacturers"> 
+            <option>Selecione</option>
+            <option>Dell</option>
+            <option>bla</option>
+          </select>
+        <br>
+        <label for="pdf_file">PDF File:</label>
+        <input type="file" id="pdf_file" name="pdf_file" accept=".pdf" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+</body>
+</html>
