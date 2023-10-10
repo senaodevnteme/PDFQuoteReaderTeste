@@ -57,7 +57,7 @@ def upload():
       #Aqui tem o pulo do gato pra identificar se a tabela é a tabela das operações kkk
       #Meu mestre de python chega tremer
       if table[0][0]== '':
-        print(table[0])
+        print(table[1][0])
         #Estrutura os dados encotrados na tabela
         operacao = {
           'tipo_operacao' : table[0][2],
@@ -66,7 +66,6 @@ def upload():
           'quantidade' : int(table[0][7]),
           'pm' : table[0][8],
           'valor_total' : table[0][9],
-          'data' : data_pregao.group(1)
         }
         operacoes.append(operacao)
     return operacoes
